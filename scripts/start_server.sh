@@ -1,5 +1,5 @@
 #!/bin/bash
-aws s3 sync s3://gokul-artifact/myartifact/ /home/ec2-user/myartifact/
+aws s3 sync s3://sid-artifact-cicd/sidharth-build /home/ec2-user/myartifact/
 mv /home/ec2-user/myartifact/target/spring-petclinic-3.3.0-SNAPSHOT.jar /home/ec2-user/app/
 sudo systemctl daemon-reload
 sudo systemctl start my-java-app.service
